@@ -1,0 +1,63 @@
+body {
+  font: 14px Times, sans-serif;
+  background-color: #f1f3f4;  
+}
+
+h1,
+h2 {
+  font-family: "Sofia";
+  font-style: italic;
+  text-shadow: 2px 2px 2px #ababab;
+}
+a{
+  border: 1px solid #458bba;
+    background-color: #458bba;
+  color: #ffffff;
+   padding: 8px;
+  margin 10px;
+  text-decoration: none;
+}
+
+table {
+  border: 1px solid #458bba;  
+  table-layout: auto;
+  border-collapse: collapse;
+  border-spacing: 5px;
+  text-align: left;
+  margin: 20px;
+}
+
+caption {
+  caption-side: top;
+  text-align: center;
+}
+
+th {
+  border: 1px solid #458bba;
+  background-color: #458bba;
+  color: #ffffff;
+  padding: 15px;
+}
+
+td {
+  border: 1px solid #458bba;
+  padding: 15px;
+}
+
+tr:nth-child(odd) td {
+  background-color: #eeeeee;
+  color: #000000;
+}
+
+tr:nth-child(even) td {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+span {
+  margin-bottom: 10px;
+  color: red;
+  font-style: italic;
+  font-size: 80%; 
+  display: none;
+}

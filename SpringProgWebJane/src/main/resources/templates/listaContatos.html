@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+  <html lang="pt-br">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Exercício 9 da disciplina ProgWeb">
+    <meta name="keywords" content="HTML,Exercício, ProgWeb">
+    <meta name="author" content="Jane Eleutério">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../agenda.css">
+
+    <title>Agenda (Cadastro de Contatos)</title>
+  </head>
+  <body>
+    <h1>Agenda (Cadastro de Contatos)</h1>
+    <h2>Listagem de contatos salvos</h2>
+    <table>
+      <tr>
+        <th>Nome</th>
+        <th>Telefone</th>
+        <th>Email</th>
+        <th>Ações</th>
+      </tr>
+      <tr th:each="c: ${listaDeContatos}">
+        <td th:text="${c.nome}">Nome</td>
+        <td th:text="${c.telefone}">Telefone</td>
+        <td th:text="${c.email}">email</td>
+        <td>
+          <a th:href="@{'/agenda/editar/' + ${c.id}}">Editar</a>
+          <a th:href="@{'/agenda/remover/' + ${c.id}}">Remover</a>
+        </td>
+      </tr>
+    </table>
+
+    <a href="/agenda/novo">Novo</a> 
+    <a href="/agenda/lista">Listar</a>
+    
+  </body>
+</html>
